@@ -1,9 +1,13 @@
-<div style="border: solid 1px; margin-top: 10px;">
-  <span><strong>HOJE</strong></span> {{ dia }}
-  <div>
-    Durante o dia <span>{{ nomeDiaria }}</span>
+<div class="outside-card ">
+  <div style="margin-bottom: 10px;">
+    <span><strong>{{ adverbioTempo }}</strong></span> {{ dia }}
   </div>
-  <div>
-    Pernoite <span>{{ nomePernoite }}</span>
+  <div class="inside-card">
+    <span style="text-decoration: underline; margin-right: 20px;">Durante o dia</span>
+    <span>{{ nomeDiaria }}</span>
+  </div>
+  <div class="inside-card">
+    <span style="text-decoration: underline;; margin-right: 20px;">Pernoite</span>
+    <span>{{ nomePernoite }}</span>
   </div>
 </div>

@@ -1,0 +1,11 @@
+.outside-card {
+  border: solid 1px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.inside-card {
+  border: solid 1px;
+  margin: 5px 0px;
+  padding: 5px;
+}
