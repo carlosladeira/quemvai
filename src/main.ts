@@ -8,18 +8,7 @@ import { InformacoesDoDia } from './informacoes-do-dia/informacoes-do-dia';
   selector: 'my-app',
   standalone: true,
   imports: [CommonModule, InformacoesDoDia],
-  template: `
-    <informacoes-do-dia
-      diaMes="21/03/2023"
-      nomeDiaria="Dodó"
-      nomePernoite="Ivanilda"
-    />
-    <informacoes-do-dia
-      diaMes="22/03/2023"
-      nomeDiaria="Vera"
-      nomePernoite="Sandra"
-    />
-  `,
+  templateUrl: './main.html' 
 })
 export class App {
 }
