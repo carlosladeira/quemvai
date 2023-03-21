@@ -10,12 +10,12 @@ import { InformacoesDoDia } from './informacoes-do-dia/informacoes-do-dia';
   imports: [CommonModule, InformacoesDoDia],
   template: `
     <informacoes-do-dia
-      dia="Quinta-feira 21/03/2023"
+      diaMes="21/03/2023"
       nomeDiaria="Dodó"
       nomePernoite="Ivanilda"
     />
     <informacoes-do-dia
-      dia="Sexta-feira 22/03/2023"
+      diaMes="22/03/2023"
       nomeDiaria="Vera"
       nomePernoite="Sandra"
     />
