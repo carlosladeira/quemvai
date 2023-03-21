@@ -9,15 +9,19 @@ import { InformacoesDoDia } from './informacoes-do-dia/informacoes-do-dia';
   standalone: true,
   imports: [CommonModule, InformacoesDoDia],
   template: `
-    <h1>Hello from {{name}}!</h1>
-    <a target="_blank" href="https://angular.io/start">
-      Learn more about Angular 
-    </a>
-    <informacoes-do-dia />
+    <informacoes-do-dia
+      dia="Quinta-feira 16/03"
+      nomeDiaria="Dodó"
+      nomePernoite="Ivanilda"
+    />
+    <informacoes-do-dia
+      dia="Sexta-feira 17/03"
+      nomeDiaria="Vera"
+      nomePernoite="Sandra"
+    />
   `,
 })
 export class App {
-  name = 'Angular';
 }
 
 bootstrapApplication(App);
