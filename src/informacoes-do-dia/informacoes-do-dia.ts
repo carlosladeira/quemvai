@@ -22,11 +22,17 @@ export class InformacoesDoDia implements OnInit {
     console.log('Dia: ', this.diaMes);
     //console.log('Hoje: ', this.hoje.toLocaleDateString());
 
-    this.diaSemana = this.days[ this.hoje.getDay() ];
+    this.diaSemana = this.days[ new Date(this.diaMes).getDay() ];
+    //this.diaSemana = this.days[ new Date( this.invertDate(this.diaMes) ).getDay() ];
     console.log(this.diaSemana);
     console.log(this.hoje.getDay());
     // TODO: get weekday given input 'diaMes'
 
     this.adverbioTempo = this.diaMes === this.hoje.toLocaleDateString() ? 'HOJE' : 'AMANHÃ';
+  }
+
+  invertDate(inputDate: string): string {
+    // invert order of elements of date
+    return '';
   }
 }
