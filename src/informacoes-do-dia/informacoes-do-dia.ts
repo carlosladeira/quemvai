@@ -19,20 +19,19 @@ export class InformacoesDoDia implements OnInit {
   hoje = new Date();
 
   ngOnInit() {
-    console.log('Dia: ', this.diaMes);
-    //console.log('Hoje: ', this.hoje.toLocaleDateString());
-
-    this.diaSemana = this.days[ new Date(this.diaMes).getDay() ];
-    //this.diaSemana = this.days[ new Date( this.invertDate(this.diaMes) ).getDay() ];
-    console.log(this.diaSemana);
-    console.log(this.hoje.getDay());
-    // TODO: get weekday given input 'diaMes'
-
+    this.diaSemana = this.getWeekDay(this.diaMes);
     this.adverbioTempo = this.diaMes === this.hoje.toLocaleDateString() ? 'HOJE' : 'AMANHÃ';
   }
 
+  getWeekDay(inputDiaMes: string): string {
+    const numeralWeekDay = new Date( this.invertDate(inputDiaMes) ).getDay();
+    const weekDay = this.days[ numeralWeekDay + 1 ];
+    return weekDay;
+  }
+
   invertDate(inputDate: string): string {
-    // invert order of elements of date
-    return '';
+    const elements = inputDate.split("/");
+    const newFormat = elements[2] + '-' + elements[1] + '-' + elements[0];
+    return newFormat;
   }
 }
