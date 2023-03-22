@@ -3,16 +3,16 @@
   margin-bottom: 20px;
   padding: 10px;
 
-  border: 4px solid #004b94;
+  border: 4px solid #00529D;
   
 
   border-radius: 24px 24px 24px 24px;
   -webkit-border-radius: 24px 24px 24px 24px;
   -moz-border-radius: 24px 24px 24px 24px;
 
-  box-shadow: 13px 10px 30px -12px #072b7b;
-  -webkit-box-shadow: 13px 10px 30px -12px #072b7b;
-  -moz-box-shadow: 13px 10px 30px -12px #072b7b;
+  box-shadow: 13px 10px 30px -12px #00529D;
+  -webkit-box-shadow: 13px 10px 30px -12px #00529D;
+  -moz-box-shadow: 13px 10px 30px -12px #00529D;
 }
 
 .header-card {
@@ -39,8 +39,29 @@
   -moz-box-shadow: 4px 4px 12px 0px #072b7b;
 }
 
+.label-adverbio {
+  font-weight: bold;
+  color: #dce6df;
+
+  padding-left: 10px;
+  width: 100px;
+}
+
+.label-dia {
+  color: #dce6df;
+  width: 100px;
+}
+
 .label-periodo {
   text-decoration: underline;
+  font-weight: bold;
+  color: #dce6df;
+
   margin-right: 20px;
   width: 110px;
+}
+
+.label-nome {
+  font-weight: bold;
+  color: #dce6df;
 }

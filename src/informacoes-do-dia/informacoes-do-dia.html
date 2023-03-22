@@ -1,15 +1,15 @@
 <div class="outside-card ">
   <div class="header-card">
-    <div style="padding-left: 10px; width: 100px;"><strong>{{ adverbioTempo }}</strong></div>
-    <div style="width: 100px;">{{ diaSemana }}</div>
-    <div>{{ diaMes }}</div>
+    <div class="label-adverbio">{{ adverbioTempo }}</div>
+    <div class="label-dia">{{ diaSemana }}</div>
+    <div class="label-dia">{{ diaMes }}</div>
   </div>
   <div class="inside-card">
     <div class="label-periodo">Durante o dia</div>
-    <div>{{ nomeDiaria }}</div>
+    <div class="label-nome">{{ nomeDiaria | uppercase }}</div>
   </div>
   <div class="inside-card">
     <div class="label-periodo">Pernoite</div>
-    <div>{{ nomePernoite }}</div>
+    <div class="label-nome">{{ nomePernoite | uppercase }}</div>
   </div>
 </div>
