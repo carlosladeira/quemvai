@@ -11,6 +11,23 @@ import { InformacoesDoDia } from './informacoes-do-dia/informacoes-do-dia';
   templateUrl: './main.html' 
 })
 export class App {
+  results = [
+    {
+      diaMes: "22/03/2023",
+      nomeDiaria: "Dodó",
+      nomePernoite: "Ivanilda"
+    },
+    {
+      diaMes: "23/03/2023",
+      nomeDiaria: "Vera",
+      nomePernoite: "Sandra"
+    },
+    {
+      diaMes: "24/03/2023",
+      nomeDiaria: "Dodó",
+      nomePernoite: "Sandra"
+    }
+  ];
 }
 
 bootstrapApplication(App);

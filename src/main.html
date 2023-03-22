@@ -1,10 +1,7 @@
-<informacoes-do-dia
-  diaMes="22/03/2023"
-  nomeDiaria="Dodó"
-  nomePernoite="Ivanilda"
-/>
-<informacoes-do-dia
-  diaMes="23/03/2023"
-  nomeDiaria="Vera"
-  nomePernoite="Sandra"
-/>
+<div *ngFor="let result of results; let i=index;">
+  <informacoes-do-dia
+    diaMes="{{result.diaMes}}"
+    nomeDiaria="{{result.nomeDiaria}}"
+    nomePernoite="{{result.nomePernoite}}"
+  />
+</div>
