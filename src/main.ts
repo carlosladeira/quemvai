@@ -21,11 +21,6 @@ export class App {
       diaMes: "23/03/2023",
       nomeDiaria: "Vera",
       nomePernoite: "Sandra"
-    },
-    {
-      diaMes: "24/03/2023",
-      nomeDiaria: "Dodó",
-      nomePernoite: "Sandra"
     }
   ];
 }
