@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+const days = ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado'];
+
 @Component({
   selector: 'informacoes-do-dia',
   standalone: true,
@@ -13,19 +15,22 @@ export class InformacoesDoDia implements OnInit {
   @Input() nomeDiaria: string;
   @Input() nomePernoite: string;
 
+  hoje = new Date();
   adverbioTempo: string;
   diaSemana: string;
-  days = ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado'];
-  hoje = new Date();
 
   ngOnInit() {
+    this.adverbioTempo = this.getAdverb();
     this.diaSemana = this.getWeekDay(this.diaMes);
-    this.adverbioTempo = this.diaMes === this.hoje.toLocaleDateString() ? 'HOJE' : 'AMANHÃ';
+  }
+
+  getAdverb(): string {
+    return this.diaMes === this.hoje.toLocaleDateString() ? 'HOJE' : 'AMANHÃ';
   }
 
   getWeekDay(inputDiaMes: string): string {
     const numeralWeekDay = new Date( this.invertDate(inputDiaMes) ).getDay();
-    const weekDay = this.days[ numeralWeekDay + 1 ];
+    const weekDay = days[ numeralWeekDay + 1 ];
     return weekDay;
   }
 
