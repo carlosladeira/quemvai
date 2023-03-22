@@ -4,8 +4,24 @@
   padding: 10px;
 }
 
+.header-card {
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: 10px;
+}
+
 .inside-card {
+  display: flex;
+  flex-direction: row;
+
   border: solid 1px;
   margin: 5px 0px;
   padding: 5px;
+}
+
+.label-periodo {
+  text-decoration: underline;
+  margin-right: 20px;
+  width: 110px;
 }

@@ -25,7 +25,8 @@ export class InformacoesDoDia implements OnInit {
   }
 
   getAdverb(): string {
-    return this.diaMes === this.hoje.toLocaleDateString() ? 'HOJE' : 'AMANHÃ';
+    const adverb = this.diaMes === this.hoje.toLocaleDateString() ? 'HOJE' : 'AMANHÃ';
+    return adverb;
   }
 
   getWeekDay(inputDiaMes: string): string {
