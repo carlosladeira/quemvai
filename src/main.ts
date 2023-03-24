@@ -13,14 +13,14 @@ import { InformacoesDoDia } from './informacoes-do-dia/informacoes-do-dia';
 export class App {
   results = [
     {
-      diaMes: "22/03/2023",
-      nomeDiaria: "Dodó",
+      diaMes: "24/03/2023",
+      nomeDiaria: "Vera",
       nomePernoite: "Ivanilda"
     },
     {
-      diaMes: "23/03/2023",
-      nomeDiaria: "Vera",
-      nomePernoite: "Sandra"
+      diaMes: "25/03/2023",
+      nomeDiaria: "Sandra",
+      nomePernoite: "Ivanilda"
     }
   ];
 }

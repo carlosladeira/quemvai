@@ -29,6 +29,7 @@
   border: solid 1px #072b7b;
   margin: 15px 10px;
   padding: 10px;
+  height: 40px;
 
   border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
@@ -40,16 +41,19 @@
 }
 
 .label-adverbio {
+  font-size: x-large;
   font-weight: bold;
   color: #dce6df;
 
-  padding-left: 10px;
-  width: 100px;
+  padding-left: 20px;
+  width: 150px;
 }
 
 .label-dia {
   color: #dce6df;
   width: 100px;
+
+  padding: 4px 0;
 }
 
 .label-periodo {
@@ -57,6 +61,7 @@
   font-weight: bold;
   color: #dce6df;
 
+  padding-left: 10px;
   margin-right: 20px;
   width: 110px;
 }
@@ -64,4 +69,6 @@
 .label-nome {
   font-weight: bold;
   color: #dce6df;
+
+  padding: 10px 0;
 }
